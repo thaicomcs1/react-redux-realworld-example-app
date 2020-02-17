@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh "docker build -t thaicomcs1/react-exampl:example ."
+                    sh "docker build --network host -t thaicomcs1/react-exampl:example ."
                 }
             }
         }
